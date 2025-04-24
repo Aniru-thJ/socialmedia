@@ -1,0 +1,75 @@
+@import "../../style.scss";
+
+.navbar
+{
+    @include themify($themes){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    height:50px;
+    border-bottom: 5px solid themed("heading");
+    background-color:themed("bgone");
+    position: sticky;
+    top:0px;
+    color:themed("textColour") ;
+    z-index: 999;
+
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:50px;
+ span{
+    font-family:Bungee Tint, sans-serif;
+    color: themed("heading");
+ }
+ .search{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    border:1px solid white;
+    padding:5px;
+    input
+    {
+        text-align: center;
+        border:none;
+        width: 500px;
+
+        @include mobile{
+            display: none;
+        }
+    }
+ }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        gap:50px;
+        justify-content: space-between;
+
+        @include mobile{
+            display: none;
+        }
+        .user{
+            display: flex;
+        align-items: center;
+        color: themed("textColour");
+            
+            img{
+                width: 30px;
+                height:30px;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+
+            span{
+
+            }
+        }
+
+    }
+}
+}
