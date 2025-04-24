@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lacquer&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
+.register{
+    height: 100vh;
+    background-color:lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        overflow: hidden;
+        display: flex;
+        background-color: lightgoldenrodyellow;
+        width: 50%;
+        min-height: 600px;
+        border-radius: 10px;
+        // padding: 20px;
+        border-color: red;
+        // border-style: solid;
+        box-shadow: 5px 5px 10px red;
+        .left{
+            text-align: center;
+            background:linear-gradient(rgba(255, 204, 203, 0.5),rgba(255, 179, 179, 0.5)), url("https://images.pexels.com/photos/5709255/pexels-photo-5709255.jpeg?auto=compress&cs=tinysrgb&w=600 center");
+            flex: 1;
+            background-size:cover;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            // // align-items: end;
+            // position: relative;
+            // top:50px;
+            gap: 15px;
+            color: white;
+            .header{
+                display: flex;
+                flex-direction: column;
+                gap:50px;
+                // text-align: center;
+                // align-items: center;
+                position: relative;
+                top:150px;
+                h1{
+                    line-height: 30px;
+                    }
+                    button{
+                        padding: 10px;
+                        border: none;
+                        background-color: red;
+                        color: white;
+                    }
+            }
+                
+               
+            }
+            
+            
+        }
+        .right{
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            justify-content: center;
+            h1{
+                color: red;
+            }
+            p{
+                color: black;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+                input{
+                    border:none;
+                    border-bottom: gray;
+                    padding: 10px;
+                }
+                button{
+                    padding: 10px;
+                    border: none;
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+    }

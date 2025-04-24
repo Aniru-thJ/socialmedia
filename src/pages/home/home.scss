@@ -1,0 +1,17 @@
+@import "../../style.scss";
+
+.home{
+    @include themify($themes){
+
+        background-color: themed("bg");
+        border-radius: 30px;
+        padding:20px 70px;
+        margin-left: 5px;
+        margin-right:5px;
+
+        @include mobile{
+            padding: 10px;
+            margin: 0px;
+        }
+}
+}

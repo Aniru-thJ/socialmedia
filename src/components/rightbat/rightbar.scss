@@ -1,0 +1,86 @@
+@import "../../style.scss";
+
+.rightbar{
+    @include themify($themes){
+    flex:3;
+    background-color: themed("bg");
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - 75px);
+    overflow: scroll;
+    border-radius: 30px;
+
+    @include mobile{
+        display: none;
+    }
+
+
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+    .container{
+        padding:20px;
+        .item{
+            -webkit-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 29px -1px rgba(0,0,0,0.75);
+background-color:themed("bgone");
+padding:10px;
+margin-top: 10px;
+border-radius: 30px;
+            span{
+                color: red;
+                font-family:"Bungee Tint", sans-serif;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .userinfo{
+                    display: flex;
+                align-items: center;
+                gap: 5px;
+                position: relative;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+                    p{
+                        color: themed("textColour");
+
+                    }span{
+                        color: themed("textColour");
+
+                    }
+                    .online{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position: absolute;
+                        top:0px;
+                        left:30px;
+
+                    }
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap:10px;
+                    color: themed("textColour");
+                    // button{
+                    //     background-color: red;
+                    //     border: none;
+
+                    // }
+                }
+            }
+        }
+    }
+}
+}
